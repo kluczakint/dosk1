@@ -64,6 +64,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 100%;
+	 margin-left: 0px;	 
 }
 
 #page-content #region-post {
@@ -76,7 +77,7 @@ body {
 
 #page-content .region-content {
     overflow: hidden;
-    padding: 10px;
+    padding: 0px;
 }
 
 #page-footer {
@@ -104,17 +105,17 @@ body {
 
 .blocks-moving.side-post-only #page-content #region-pre {
     left: 0px;
-    width: 0px;
+    width: 100%;
 }
 
 .blocks-moving.side-post-only #page-content #region-post {
     left: 0px;
-    width: 0px;
+    width: 100%;
 }
 
 /** No blocks whatsoever **/
 .content-only #page-content {
-    min-width: 0;
+    
 }
 
 .content-only #page-content #region-main-box {
@@ -131,11 +132,11 @@ body {
 
 .content-only #page-content #region-pre {
     left: 0;
-    width: 0px;
+    width: 100%;
 }
 
 .content-only #page-content #region-post {
-    width: 0;
+    width: 100%;
 }
 
 /** Stabalise some IE6 behaviour **/
@@ -258,8 +259,56 @@ body {
 	width: 239px;
 	margin-right: 2px;
 	margin-left: 2px;
+	text-align: left;
+	height: auto;
+	
 }
 
+#region-pre .block_html ul  {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#region-pre .block_html ul li {
+	list-style-image: url([[pix:theme|li-block]]);
+	margin-bottom: 17px;
+	font-size: 14px;
+	color: #736563;
+	font-weight: bold;
+}
+
+#region-pre .block_html a,
+#region-pre .block_html a:link,
+#region-pre .block_html a:visited,
+#region-post .block_html a,
+#region-post .block_html a:link,
+#region-post .block_html a:visited {
+	font-size: 14px;
+	color: #736563;
+	text-decoration: none;
+}
+
+#region-pre .block_html a:hover,
+#region-post .block_html a:hover
+{
+	color: #ff5d00;
+}
 .navbar {
 	margin: 5px 0px;
+}
+
+.block .content {
+	border: none;
+}
+
+.block.block_html .content .no-overflow {
+	padding: none !important;
+}
+
+#page-content .main-region {
+	
+}
+
+.generalbox {
+	margin: 10px;
 }
