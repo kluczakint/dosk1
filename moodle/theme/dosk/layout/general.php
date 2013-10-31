@@ -59,8 +59,7 @@ echo $OUTPUT->doctype() ?>
     <div id="page-header" class="clearfix">
         <h1 class="headermain"><img src="<?php echo $OUTPUT->pix_url('logo', 'theme'); ?>" alt="dobreOSK"></h1>
 		  <div class="logotxt">
-		  	Wsparcie dla systemu szkoleniowego<br>
-kierowców zawodowych w Polsce	
+		  	Profesjonalne kursy dla kierowców
 			</div>	
 		  <div class="mainlink">
 		  	  <a href="<?php echo $CFG->wwwroot; ?>">	<img src="<?php echo $OUTPUT->pix_url('home', 'theme'); ?>" alt="">Platforma szkoleniowa dla OSK </a>
@@ -91,7 +90,7 @@ kierowców zawodowych w Polsce
 			</div>
 			*/ ?>
 			
-			<a class="partner" href="<?php echo $CFG->wwwroot; ?>" title="Strona główna"></a>
+			
     </div>
 	 
 	 <?php if ($hascustommenu) { ?>
@@ -102,6 +101,14 @@ kierowców zawodowych w Polsce
 	 
 <!-- END OF HEADER -->
 <?php } ?>
+
+
+ <?php if ($hasnavbar) { ?>
+            <div class="navbar clearfix">
+                <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
+                <div class="navbutton"> <?php echo $PAGE->button; ?></div>
+            </div>
+    <?php } ?>
 
 
  <!-- START OF LEFT -->

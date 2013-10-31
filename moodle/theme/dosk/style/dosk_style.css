@@ -24,11 +24,11 @@ body {
 }
 
 #page-content {
-    clear: both;
+    clear: none;
     float: none;
     overflow: hidden;
-    position: relative;
-    width: 100%;
+    position: inherit;
+    width: auto;
 }
 
 #page-content #region-main-box {
@@ -81,34 +81,35 @@ body {
 
 #page-footer {
     clear: both;
+	 margin-top: 10px;
     float: none;
-    width: 100%;
+    width: auto;
 }
 
 
 
 /** Moving block when side-post-only **/
 .blocks-moving.side-post-only #page-content #region-main-box {
-    left: 200px;
-    width: 200%;
+    left: 0px;
+    width: auto;
 }
 
 .blocks-moving.side-post-only #page-content #region-post-box {
-    margin-left: -400px;
+    margin-left: 0px;
 }
 
 .blocks-moving.side-post-only #page-content #region-main {
-    margin-left: 400px;
+    margin-left: 0px;
 }
 
 .blocks-moving.side-post-only #page-content #region-pre {
-    left: 200px;
-    width: 200px;
+    left: 0px;
+    width: 0px;
 }
 
 .blocks-moving.side-post-only #page-content #region-post {
     left: 0px;
-    width: 200px;
+    width: 0px;
 }
 
 /** No blocks whatsoever **/
@@ -172,7 +173,7 @@ body {
 }
 
 .pagelayout-report #report-main-content .region-content {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .pagelayout-report #report-main-content .region-content table {
@@ -181,13 +182,13 @@ body {
 
 .pagelayout-report #report-region-wrap {
     width: 0;
-    float: right;
+    float: none;
     position: relative;
-    left: -100%;
+    left: 0;
 }
 
 .pagelayout-report #report-region-pre {
-    width: 200px;
+    width: 0px;
 }
 
 .pagelayout-report #page-footer {
@@ -206,7 +207,7 @@ body {
 /** Correct for right to left languages **/
 .dir-rtl.pagelayout-report #report-main-content .region-content {
     margin-left: 0;
-    margin-right: 200px;
+    margin-right: 0px;
 }
 
 .dir-rtl.pagelayout-report #report-region-wrap {
@@ -221,7 +222,7 @@ body {
 
 .ie6.pagelayout-report #report-region-wrap {
     float: none;
-    width: 200px;
+    width: auto;
     left: auto;
     position: absolute;
     top: 0;
@@ -246,9 +247,19 @@ body {
 	display: none;
 }
 
+#region-pre, #region-post {
+	text-align: center;
+	height: auto;
+}
+
 #region-pre .block, #region-post .block {
-	float: left;
+	vertical-align: top;
+	display: inline-block;
 	width: 239px;
 	margin-right: 2px;
 	margin-left: 2px;
+}
+
+.navbar {
+	margin: 5px 0px;
 }
