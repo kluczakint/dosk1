@@ -309,6 +309,16 @@ body {
 	
 }
 
+.modified {
+	display: none !important;
+}
+
 .generalbox {
 	margin: 10px;
+}
+
+.pagelayout-report #page-content {
+	width: 978px;
+	margin: 10px auto;
+	
 }
