@@ -104,51 +104,36 @@ kierowców zawodowych w Polsce
 <?php } ?>
 
 
-    <div id="page-content">
-        <div id="region-main-box">
-            <div id="region-post-box">
+ <!-- START OF LEFT -->
+ <?php if ($hassidepre) { ?>
+ 	<div id="region-pre" class="block-region clearfix">
+   	<div class="region-content">
+      	<?php echo $OUTPUT->blocks_for_region('side-pre'); ?>
+      </div>
+   </div>
+ <?php } ?>
+<!-- END OF LEFT -->
 
-                <div id="region-main-wrap">
-                    <div id="region-main">
-                        <div class="region-content">
-                            <?php echo $coursecontentheader; ?>
-                            <?php echo $OUTPUT->main_content() ?>
-                            <?php echo $coursecontentfooter; ?>
-                        </div>
-                    </div>
-                </div>
 
-                <?php if ($hassidepre OR (right_to_left() AND $hassidepost)) { ?>
-                <div id="region-pre" class="block-region">
-                    <div class="region-content">
-                            <?php
-                        if (!right_to_left()) {
-                            echo $OUTPUT->blocks_for_region('side-pre');
-                        } elseif ($hassidepost) {
-                            echo $OUTPUT->blocks_for_region('side-post');
-                    } ?>
-
-                    </div>
-                </div>
-                <?php } ?>
-
-                <?php if ($hassidepost OR (right_to_left() AND $hassidepre)) { ?>
-                <div id="region-post" class="block-region">
-                    <div class="region-content">
-                           <?php
-                       if (!right_to_left()) {
-                           echo $OUTPUT->blocks_for_region('side-post');
-                       } elseif ($hassidepre) {
-                           echo $OUTPUT->blocks_for_region('side-pre');
-                    } ?>
-                    </div>
-                </div>
-                <?php } ?>
-
-            </div>
-        </div>
+<!-- START OF CONTENT -->
+    <div id="page-content" class="clearfix">
+              <div class="region-content">
+                   <?php echo $OUTPUT->main_content(); ?>
+              </div>
     </div>
-
+<!-- END OF CONTENT -->
+	 
+<!-- START OF RIGHT -->
+	<?php if ($hassidepost OR (right_to_left() AND $hassidepre)) { ?>
+   	<div id="region-post" class="block-region clearfix">
+      	<div class="region-content">
+         	<?php  echo $OUTPUT->blocks_for_region('side-post'); ?>
+         </div>
+      </div>
+   <?php } ?>
+<!-- END OF RIGHT -->
+	 
+	 
 <!-- START OF FOOTER -->
     <?php if (!empty($coursefooter)) { ?>
         <div id="course-footer"><?php echo $coursefooter; ?></div>
