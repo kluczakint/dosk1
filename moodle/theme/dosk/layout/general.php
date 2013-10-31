@@ -57,7 +57,7 @@ echo $OUTPUT->doctype() ?>
 
 <!-- START OF HEADER -->
     <div id="page-header" class="clearfix">
-        <h1 class="headermain"><img src="<?php echo $OUTPUT->pix_url('logo', 'theme'); ?>" alt="ekurs.eu"></h1>
+        <h1 class="headermain"><img src="<?php echo $OUTPUT->pix_url('logo', 'theme'); ?>" alt="dobreOSK"></h1>
 		  <div class="logotxt">
 		  	Wsparcie dla systemu szkoleniowego<br>
 kierowców zawodowych w Polsce	
@@ -91,7 +91,7 @@ kierowców zawodowych w Polsce
 			</div>
 			*/ ?>
 			
-			<a class="partner" href="http://ekurs.eu" title="Strona główna"></a>
+			<a class="partner" href="<?php echo $CFG->wwwroot; ?>" title="Strona główna"></a>
     </div>
 	 
 	 <?php if ($hascustommenu) { ?>

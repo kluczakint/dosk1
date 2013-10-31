@@ -29,7 +29,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'ekurs';
+$THEME->name = 'dosk';
 $THEME->parents = array('base');
 $THEME->sheets = array(
     'core',     /** Must come first**/
