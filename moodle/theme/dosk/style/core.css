@@ -618,3 +618,5 @@ div#menua a:hover{
 #page-message-edit table.generaltable th.c0 {text-align: left;}
 #page-message-edit table.generaltable td.c0 {text-align: right;}
 #page-message-edit table.generaltable td.disallowed {text-align: center;vertical-align:middle;}
+
+.placeholder { color: #aaa; }
