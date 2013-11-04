@@ -84,7 +84,7 @@
     border-radius: 10px;
 }
 
-.path-calendar .maincalendar, .path-calendar .sidecalendar, .path-calendar td.sidecalendar .block, .loginbox, .userinfobox, .groupinfobox, .forumpost, .block .content, .glossarycomment {
+.path-calendar .maincalendar, .path-calendar .sidecalendar, .path-calendar td.sidecalendar .block, .loginbox, .userinfobox, .groupinfobox, .forumpost,  .glossarycomment {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;

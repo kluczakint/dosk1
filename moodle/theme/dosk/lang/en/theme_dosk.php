@@ -26,4 +26,12 @@
 $string['pluginname'] = 'dOSK';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+$string['region-top-1'] = 'Top - 1';
+$string['region-top-2'] = 'Top - 2';
+$string['region-top-3'] = 'Top - 3';
+$string['region-top-4'] = 'Top - 4';
+$string['region-bot-1'] = 'Bot - 1';
+$string['region-bot-2'] = 'Bot - 2';
+$string['region-bot-3'] = 'Bot - 3';
+$string['region-bot-4'] = 'Bot - 4';
 $string['choosereadme'] = 'dOSK Theme';
