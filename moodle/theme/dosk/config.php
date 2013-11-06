@@ -127,6 +127,12 @@ $THEME->layouts = array(
         'regions' => array(),
         'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nocourseheaderfooter'=>true),
     ),
+	 // SCORM
+    'scorm' => array(
+        'file' => 'scorm.php',
+        'regions' => array(),
+        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nocourseheaderfooter'=>true),
+    ),
     // Used during upgrade and install, and for the 'This site is undergoing maintenance' message.
     // This must not have any blocks, and it is good idea if it does not have links to
     // other places - for example there should not be a home link in the footer...
