@@ -287,22 +287,24 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
  * Overriding base
  */
 #page {
-	width: 980px;
+	/*width: 980px; */
+	width: 796px;
 	margin: 0 auto;
 }
  
 #page #page-header {
-	width: 980px;
+	width: 796px;
 	margin: 0 auto;
-	background: transparent url([[pix:theme|head]]) no-repeat top;
-	height: 118px;
+	background: transparent url([[pix:theme|header]]) no-repeat top;
+	height: 193px;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 20px;
+	
 } 
 
 #page #page-header .headermain {
 	position: absolute;
-	left: 10px;
+	left: 0px;
 	top: 2px;
 }
 
@@ -320,8 +322,8 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 #page #page-header .mainlink a,
 #page #page-header .mainlink a:link,
 #page #page-header .mainlink a:visited {
-	color: #ccc;
-	font-size: 11px;
+	color: #dadada;
+	font-size: 12px;
 	font-weight: bold;
 }
 
@@ -334,7 +336,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 #page #page-header .mainlink {
 	position: absolute;
 	left: 10px;
-	top: 96px;
+	top: 156px;
 }
 
 #page #page-header .mainlink img {

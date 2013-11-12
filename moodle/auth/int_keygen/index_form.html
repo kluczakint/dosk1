@@ -1,0 +1,39 @@
+<?php
+
+if (!empty($CFG->loginpasswordautocomplete)) {
+    $autocomplete = 'autocomplete="off"';
+} else {
+    $autocomplete = '';
+}
+?>
+<div class="loginbox clearfix">
+  <div class="loginpanel">
+  <h2>Logowanie<br>dla kursanta</h2>
+      <div class="subcontent loginsub">
+        <?php
+          if (!empty($errormsg)) {
+              echo html_writer::start_tag('div', array('class' => 'loginerrors'));
+              echo html_writer::link('#', $errormsg, array('id' => 'loginerrormessage', 'class' => 'accesshide'));
+              echo $OUTPUT->error_text($errormsg);
+              echo html_writer::end_tag('div');
+          }
+        ?>
+        <form action="<?php echo $CFG->httpswwwroot; ?>/auth/int_keygen/index.php" method="post" id="login" <?php echo $autocomplete; ?> >
+          <div class="loginform">
+            <div class="form-label"><label for="username"><?php print_string("key", "auth_int_keygen") ?></label></div>
+            <div class="form-input">
+              <input type="text" name="username" id="username" size="30" value="<?php p($frm->username) ?>" />
+            </div>            
+            <div class="clearer"><!-- --></div>
+            <div class="form-label"><label for="password"><?php print_string("password") ?></label></div>
+            <div class="form-input">
+              <input type="password" name="password" id="password" size="30" value="" <?php echo $autocomplete; ?> />              
+            </div>             
+            <div class="form-input">
+              <input type="submit" id="loginbtn" value="<?php print_string("login") ?>" />
+            </div>
+          </div>         
+        </form>
+      </div>
+     </div>
+</div>
