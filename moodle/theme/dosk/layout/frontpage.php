@@ -111,8 +111,8 @@ echo $OUTPUT->doctype() ?>
 			</div>	
 			
 			<div id="menu_dosk">
-				<a href="#">PKK</a>
-				<a href="#">O platformie</a>
+				<a href="<?php echo $CFG->wwwroot."/mod/page/view.php?id=2"; ?>">PKK</a>
+				<a href="<?php echo $CFG->wwwroot."/mod/page/view.php?id=7"; ?>">O platformie</a>
 				<?php
 				if(!$USER->id){
 				echo '<a href="'.$CFG->wwwroot.'/login/index.php">Logowanie</a>';
