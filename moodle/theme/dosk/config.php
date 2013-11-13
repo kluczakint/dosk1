@@ -121,7 +121,12 @@ $THEME->layouts = array(
         'regions' => array(),
         'options' => array('nofooter'=>true, 'nocoursefooter'=>true),
     ),
-    // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible
+    'scorm' => array(
+        'file' => 'scorm.php',
+        'regions' => array(),
+        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nocourseheaderfooter'=>true),
+    ),
+	 // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible
     'embedded' => array(
         'file' => 'embedded.php',
         'regions' => array(),

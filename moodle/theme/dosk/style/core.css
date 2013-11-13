@@ -286,34 +286,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 /**
  * Overriding base
  */
-#page {
-	/*width: 980px; */
-	width: 796px;
-	margin: 0 auto;
-}
- 
-#page #page-header {
-	width: 796px;
-	margin: 0 auto;
-	background: transparent url([[pix:theme|header]]) no-repeat top;
-	height: 193px;
-	position: relative;
-	margin-top: 20px;
-	
-} 
 
-#page #page-header .headermain {
-	position: absolute;
-	left: 0px;
-	top: 2px;
-}
-
-#page #page-header .headermenu {
-	position: absolute; 
- 	top: 89px;
-	right: 10px;
-	
-}
 
 #page #page-header .headermenu,
 #page #page-header .headermenu a,

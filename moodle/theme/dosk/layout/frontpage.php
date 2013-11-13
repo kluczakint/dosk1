@@ -28,16 +28,16 @@ if($hassidetop1){
 }
 
 switch ($top_blocks){
-/*
+
 case 1: $top_width = "980px"; break;
 case 2: $top_width = "480px"; break;
 case 3: $top_width = "320px"; break;
 case 4: $top_width = "238px"; break; 
-*/
+/*
 case 1: $top_width = "796px"; break;
 case 2: $top_width = "390px"; break;
 case 3: $top_width = "259px"; break;
-case 4: $top_width = "195px"; break; 
+case 4: $top_width = "195px"; break;  */
 default: break;}
 
 $bot_blocks = 0;
