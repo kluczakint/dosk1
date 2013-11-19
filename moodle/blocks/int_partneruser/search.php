@@ -76,10 +76,7 @@ if($searchdata = $searchform->get_data()){
 }
 
 echo $OUTPUT->header();
-echo '<div class="add_user_form"><div class="naglowek">';
 
-echo $OUTPUT->heading($titlesearch);
-echo '</div>';
 foreach($users as $user){	
 	$addurl = new moodle_url('/blocks/int_partneruser/search.php', array('id'=>$blockid, 'add'=>$user->id, 'sesskey'=>sesskey()));
 	
@@ -91,11 +88,16 @@ foreach($users as $user){
 }
 
 if(empty($users)){
+	echo '<div class="add_user_form"><div class="naglowek">';
+	echo $OUTPUT->heading($titlesearch);
+	echo '</div>';
 	$searchform->display();
+	echo '</div>';
 }
+
 if($searchdata){
 	$table->finish_output();
 }
 
-echo '</div>';
+
 echo $OUTPUT->footer();

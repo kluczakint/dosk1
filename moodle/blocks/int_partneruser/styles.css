@@ -145,3 +145,32 @@ span#id_error_lastname {
 	top: 4px;
 	margin: 0px;
 }
+
+
+#page-blocks-int_partneruser-users h2.main {
+	display: block;
+	margin: 0px;
+	margin-bottom: -5px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	width: 379px;
+	background: url([[pix:theme|tableheader]]) top left no-repeat;
+	
+}
+
+#page-blocks-int_partneruser-users div.no-overflow {
+border-top: 4px solid #f07d00;
+	-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+#page-blocks-int_partneruser-users table.int_partneruser tr td {
+	border-color: #e8e9e9;
+}
