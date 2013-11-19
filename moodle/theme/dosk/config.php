@@ -57,50 +57,50 @@ $THEME->layouts = array(
     // Standard layout with blocks, this is recommended for most pages with general information
     'standard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     // Main course page
     'course' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     'coursecategory' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     // part of course, typical for modules - default page layout if $cm specified in require_login()
     'incourse' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     // Server administration scripts.
     'admin' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre','side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     // My dashboard page
     'mydashboard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     // My public page
     'mypublic' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
@@ -121,12 +121,7 @@ $THEME->layouts = array(
         'regions' => array(),
         'options' => array('nofooter'=>true, 'nocoursefooter'=>true),
     ),
-    'scorm' => array(
-        'file' => 'scorm.php',
-        'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nocourseheaderfooter'=>true),
-    ),
-	 // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible
+    // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible
     'embedded' => array(
         'file' => 'embedded.php',
         'regions' => array(),
@@ -161,7 +156,7 @@ $THEME->layouts = array(
     // The pagelayout used for safebrowser and securewindow.
     'secure' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3', 'top-4', 'bot-1', 'bot-2', 'bot-3', 'bot-4'),
+        'regions' => array('side-pre', 'side-post', 'top-1', 'top-2', 'top-3',  'bot-1', 'bot-2', 'bot-3'),
         'defaultregion' => 'side-pre',
         'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologinlinks'=>true, 'nocourseheaderfooter'=>true),
     ),

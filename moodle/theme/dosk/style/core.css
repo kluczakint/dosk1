@@ -309,7 +309,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 #page #page-header .mainlink {
 	position: absolute;
 	left: 10px;
-	top: 156px;
+	top: 194px;
 }
 
 #page #page-header .mainlink img {
@@ -381,7 +381,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 Page Footer
 -----------------------*/
 #page-footer {
-    background: #fff url([[pix:theme|core/h2grad]]) repeat-x left top;
+    background: #fff url([[pix:theme|footer]]) repeat-x left bottom;
     height: auto;
     clear: both;
     float: left;
@@ -594,4 +594,21 @@ div#menua a:hover{
 #page-message-edit table.generaltable td.c0 {text-align: right;}
 #page-message-edit table.generaltable td.disallowed {text-align: center;vertical-align:middle;}
 
+/*Bloki _int*/
 .placeholder { color: #aaa; }
+.int_dosk table{ width: 100%;}
+.int_dosk th{
+	border:1px solid #ccc;
+	background-image:url([[pix:theme|hgradient]]);
+	background-repeat: repeat-x;
+	background-color:#e1e1df;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: middle; 
+}
+
+.int_dosk td{
+	border:1px solid #ccc;
+	background-color: #ffffff;
+	font-size: 12px;
+}
